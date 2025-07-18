@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <!-- Page Title -->
+    <title>Lina Boughton</title>
+
+    <!-- Loads file headcontent.html, boilderplate header code
+     (CSS file references, style settings) -->
+    <div w3-include-html="/LayoutAssets/headcontent.html"></div>
+    
+    <!-- Loads & then calls a javascript function,
+     which will automatically load in anything I label
+     with the "w3-include-html" attribute -->
+    <script src="/JS/includeHTML.js"></script>
+    <script> includeHTML(); </script>
+
+    <!-- Loads icons -->
+    <script src="https://kit.fontawesome.com/cc56d9b4d5.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- class="w3-white" sets the default text to white & background to green.
+ It also uses the !important flag, so it overrides most other rules (unless more specific)-->
+<body class="w3-white">
+  <!-- Loads the Navigation Bar -->
+  <div w3-include-html="/LayoutAssets/nav.html"></div>
+
+  <!-- ----------------------------------------------------------- -->
+  <!-- PAGE CONTENT -->
+  <!-- ----------------------------------------------------------- -->
+<div id="wrap">
+  <main class="w3-padding-large" id="main">
+
+  <!-- Title -->
+  <header class="w3-container w3-center w3-white w3-padding-32" id="home">
+    <h2>Hello! I'm</h2>
+    <h1 style="color: var(--LinaGreen4);">Lina Bougton</h1>
+
+    <div class="animatedlist">
+      <div>I work in</div>
+      <ol>
+        <li><span>UI/UX Design</span></li>
+        <li><span>Web Development</span></li>
+        <li><span>Graphic Design</span></li>
+        <li><span>Software Engineering</span></li>
+        <li><span>Information Technology</span></li>
+        <li><span>Game Design</span></li>
+      </ol>
+    </div>
+  </header>
+
+  <!-- My Works -->
+  <h2 class="w3-center">Check Out My Work!</h2>
+  <br>
+  <div w3-include-html="/LayoutAssets/worksmasonry.html"></div>
+
+</main>
+
+  <!-- ----------------------------------------------------------- -->
+  <!-- END PAGE CONTENT -->
+  <!-- ----------------------------------------------------------- -->
+
+  <!-- Loads the Footer -->
+  <div w3-include-html="/LayoutAssets/footer.html"></div>
+
+</div>
+</body>
+</html>
+
+
+
+
+<!-- NOTE TO SELF: Fixing page height to ensure footer is always at the bottom -->
+<!-- Change id="main" sections to just regular main tag (instead of div) -->
+<!-- Add the "wrap" id around all main content & footer -->
