@@ -27,7 +27,7 @@
 .w3-row-padding img {margin-bottom: 12px}
 
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
+#main {margin-left: 100px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
@@ -43,24 +43,23 @@ h1 {
     margin:0px 0;
 }
 h2 {
-    font-weight: 700;
     font-style: normal;
-    font-size: 2em;
+    font-size: 1em;
     line-height: 1;
     margin:0px 0px;
+    font-weight: medium;
 }
-body, p {font-family: "Lato", sans-serif}
+body, p {font-family: "Montserrat", sans-serif}
 
 /* Sidebar ------------------------------------------------------------------------- */
 
 .w3-sidebar{
     height:100%;
-    width:200px;
+    width:100px;
     background-color: var(--LinaGreen2);
     position:fixed!important;
     z-index:1;
     overflow:auto;
-    width: 120px;
 }
 
 .w3-button:hover{
@@ -118,7 +117,7 @@ https://www.freecodecamp.org/news/how-to-create-a-mansory-layout-using-html-and-
     opacity: 1;
 }
 
-/* Footer & Main -------------------------------------------------------------------------- */
+/* Main -------------------------------------------------------------------------- */
 
 #wrap {
     display: flex;
@@ -131,6 +130,8 @@ main {
     min-height: 78.6vh;
 }
 
+/* Footer -------------------------------------------------------------------------- */
+
 footer {
     flex: 0 0 auto;
 }
@@ -140,6 +141,37 @@ footer {
     font-size: .87em;
     font-family: "Montserrat", sans-serif;
     line-height: 2;
+
+    position: relative;
+    overflow: hidden; /* This is what can clip the circle */
+}
+
+.lina-footer-circle-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    height: 100%;
+    width: 50%;
+    right: 0;
+    z-index: 0;
+}
+
+.footer-circle {
+    aspect-ratio: 1 / 1;
+    height: 150%;
+    border-radius: 50%;
+
+    display: flex;
+    z-index: 0;
+}
+
+.footer-text {
+    padding: 16px 24px;
+    z-index: 10;
+    position: relative;
+    font-weight: 500;
 }
 
 /* Animated text CSS Attempt -------------------------------------------------------- */
@@ -163,7 +195,7 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 2em;
+    font-size: 2.7em;
 }
 
 .animatedlist > * {
