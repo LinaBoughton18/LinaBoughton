@@ -41,7 +41,9 @@ h1 {
     font-size: 4.5em;
     line-height: 1.2;
     margin:0px 0;
+    color: var(--LinaGreen4);
 }
+
 h2 {
     font-style: normal;
     font-size: 1em;
@@ -49,7 +51,10 @@ h2 {
     margin:0px 0px;
     font-weight: medium;
 }
+
 body, p {font-family: "Montserrat", sans-serif}
+
+strong {font-weight: 700; color: var(--LinaGreen4);}
 
 /* Sidebar ------------------------------------------------------------------------- */
 
@@ -143,7 +148,7 @@ footer {
     line-height: 2;
 
     position: relative;
-    overflow: hidden; /* This is what can clip the circle */
+    overflow: hidden; /* Clips the circles */
 }
 
 .lina-footer-circle-container {
@@ -254,4 +259,29 @@ footer {
 .animatedlist ol li span{
     color: var(--LinaGreen4);
     white-space: nowrap; /* Prevents text from wrapping over! */
+}
+
+/* Clipped Portrait --------------------------------------------------------------------- */
+.circle-mask {
+    /* Defines a circle */
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    /* To control the size of the circle, set height or width in HTML */
+
+    /* Clipping & positioning behavior */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    /* Stylization */
+    margin-left: 4%;
+    margin-bottom: 4%;
+    background-color: var(--LinaGreen0);
+    outline: 16px solid var(--LinaGreen0);
+}
+
+.circle-mask img{
+    height: 100%;
+    display: block;
 }
