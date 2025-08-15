@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <!-- Page Title -->
+    <title>Roots of Magic</title>
+
+    <!-- Loads file headcontent.html, boilderplate header code
+     (CSS file references, style settings) -->
+    <div w3-include-html="/LayoutAssets/headcontent.html"></div>
+    
+    <!-- Loads & then calls a javascript function,
+     which will automatically load in anything I label
+     with the "w3-include-html" attribute -->
+    <script src="/JS/includeHTML.js"></script>
+    <script> includeHTML(); </script>
+
+    <!-- Loads icons -->
+    <script src="https://kit.fontawesome.com/cc56d9b4d5.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- class="w3-white" sets the default text to white & background to green.
+ It also uses the !important flag, so it overrides most other rules (unless more specific)-->
+<body class="w3-white">
+  <!-- Loads the Navigation Bar -->
+  <div w3-include-html="/LayoutAssets/nav.html"></div>
+
+<div id="wrap">
+<main class="w3-padding-large" id="main">
+
+<!-- ----------------------------------------------------------- -->
+<!-- PAGE CONTENT -->
+<!-- ----------------------------------------------------------- -->
+
+    <!-- Title + Overview -->
+    <div class="row">
+        <div class="column" style="background-color:lime; width: 60%;">
+            <header id="home">
+                <h3 style="background-color: black;">Roots of Magic</h3>
+            </header>
+            <div>
+                This is a one to two sentence description of the project yay yippee!!
+            </div>
+        </div>
+        <div class="column" style="background-color:darkred; width: 40%;">
+            <div class="row">
+                <div class="column" style="background-color: blue; width: 50%;">
+                    <ul>
+                        <li><strong>Tasks</strong></li>
+                        <li><strong>Timeline</strong></li>
+                    </ul>
+                </div>
+                <div class="column" style="background-color: darkturquoise; width: 50%;">
+                    Tools
+                    Team
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Image -->
+    <div class="project-image">
+        <img src="/Images/RootsOfMagic/ROMProjectPhoto.png">
+    </div>
+
+
+
+
+
+
+  <!-- ----------------------------------------------------------- -->
+  <!-- END PAGE CONTENT -->
+  <!-- ----------------------------------------------------------- -->
+
+</main>
+
+  <!-- Loads the Footer -->
+  <div w3-include-html="/LayoutAssets/footer.html"></div>
+
+</div>
+</body>
+</html>
