@@ -33,46 +33,90 @@
 <main class="w3-padding-large" id="main">
 
   <!-- Title -->
-  <header class="w3-white" id="home">
+  <header id="home">
     <h1>About</h1>
   </header>
 
   <!-- Portrait (In a circle :) -->
-  <!-- float:right; -->
-  <!-- margin-left:auto; margin-right:0; -->
-  <!-- justify-self:right; -->
-
-  <div class="circle-mask" style="width:45%; float:right;">
-    <img src="/Images/Headshots/Headshot1.jpg">
+  <div class="outline-circle" style="width:45%; float:right;">
+    <div class="outline-circle mask" style="width:90%; margin: auto;">
+      <img src="/Images/Headshots/Headshot1.jpg" style="height: 100%;">
+    </div>
   </div>
-  
   <br>
 
   <!-- Bio -->
   <div style="width:80%;">
-  <p> As a kid, I loved to stay up for hours creating small, online
-    video games. My <strong>natural curiosity</strong> drove me to research algorithms,
-    experiment with different game genres, or learn new drawing techniques.
-    More than just exploring new things, it motivated me to improve and
-    perfect my work by <strong>actively seeking out problems that needed solving.</strong>
-  </p>
-  <p> I continued these <strong>passions for design and technology</strong> into college,
-    where I worked part-time as an Educational Technologist, building
-    community by teaching others how to do what I do. As a liberal arts
-    student, I learned to <strong>adapt my skills to almost any field I found</strong>
-    myself in.
-  </p>
-  <p> <strong>In my free time,</strong> I’m often found cooking a new recipe,
-    designing a game, or drawing with my cat on my lap!  <strong>₍^. .^₎⟆</strong>
-  </p>
+    <p> As a kid, I loved to stay up for hours creating small, online
+      video games. My <strong>natural curiosity</strong> drove me to research algorithms,
+      experiment with different game genres, or learn new drawing techniques.
+      More than just exploring new things, it motivated me to improve and
+      perfect my work by <strong>actively seeking out problems that needed solving.</strong>
+    </p>
+    <p> I continued these <strong>passions for design and technology</strong> into college,
+      where I worked part-time as an Educational Technologist, building
+      community by teaching others how to do what I do. As a liberal arts
+      student, I learned to <strong>adapt my skills to almost any field I found</strong>
+      myself in.
+    </p>
+    <p> <strong>In my free time,</strong> I’m often found cooking a new recipe,
+      designing a game, or drawing with my cat on my lap! &nbsp;
+      <span style="white-space: nowrap;"><strong>₍^. &nbsp;.^₎⟆</strong> </span>
+    </p>
   </div>
-
   <br>
-  my skills:
 
+  <!-- Resume Button -->
+  <button class="resume-button w3-button" onclick="window.open('/LinaBoughton-Resume.pdf','_blank')">
+    <i class="fa-solid fa-file-lines"></i>
+    RESUME
+  </button>
+  <br>
+
+  <!-- Skills, Softwares, & Education -->
+  <div class="flex-container" style="padding-top: 30px;">
+    <div> <!-- Skills -->
+      <h4> Skills </h4>
+      <ul>
+        <li>Leadership</li>
+        <li>Project Management</li>
+        <li>UI/UX Design</li>
+        <li>Software Engineering</li>
+        <li>Programming</li>
+        <li><div class="minitext" style="max-width: 170px;">(C, C++, C#, Java, JavaScript, HTML/CSS, Python, & SQL)</div></li>
+        <li>Web Development</li>
+        <li>Information Technology</li>
+        <li>Game Design</li>
+        <li>Graphic Design</li>
+      </ul>
+    </div>
+    <div> <!-- Softwares -->
+      <h4> Softwares </h4>
+      <ul>
+        <li>GitHub</li>
+        <li>Figma</li>
+        <li>Unity Engine</li>
+        <li>Clip Studio</li>
+        <li>Adobe Creative Suite</li>
+        <li>Microsoft Office</li>
+      </ul>
+    </div>
+    <div> <!-- Education -->
+      <h4> Education </h4>
+      <ul>
+        <li>Bachelor’s of Arts in Computer Science</li>
+        <li><div class="minitext">+ Pathway in Digital & Visual Storytelling</div></li>
+        <li>The College of Wooster</li>
+        <li><div class="minitext">Graduated May 2025, summa cum laude</div></li>
+      </ul>
+        
+        
+        
+        
+    </div>
+  </div>
   <br>
   
-  <button class="w3-button w3-white w3-padding-large w3-section" onclick="window.open('/LinaBoughton-Resume.pdf','_blank')">Resume</button>
 
 </main>
 

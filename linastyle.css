@@ -34,27 +34,60 @@
 /* Heading & Body Text Formatting --------------------------------------------------- */
 
 /* Sets heading text to Montserrat & body/paragraph text to Lato */
-h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; font-style: normal;}
+
+/* Page Titles ("Lina Boughton" & "About") */
 h1 {
     font-weight: 700;
-    font-style: normal;
     font-size: 4.5em;
     line-height: 1.2;
     margin:0px 0;
     color: var(--LinaGreen4);
 }
 
+/* Smaller, white text (Hi! My name is) */
 h2 {
-    font-style: normal;
+    font-weight: medium;
     font-size: 1em;
     line-height: 1;
     margin:0px 0px;
-    font-weight: medium;
+    color: white;
+}
+
+/* Project Page Titles ("OhiOPT" or "Roots of Magic") */
+h3 {
+    font-weight: 625;
+    font-size: 2em;
+    line-height: 1;
+    margin:0px 0px;
+    color: var(--LinaGreen4);
+}
+
+/* Section headers ("Skills" or "Eduaction") */
+h4 {
+    font-weight: 625;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0px 0px 0px 0px;
+    color: var(--LinaGreen4);
+    text-align: left;
 }
 
 body, p {font-family: "Montserrat", sans-serif}
 
 strong {font-weight: 700; color: var(--LinaGreen4);}
+
+/* Button --------------------------------------------------------------------------- */
+.resume-button {
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    background-color: white;
+    color: var(--LinaGreen1);
+    font-size: .8em;
+    font-weight: 600;
+    padding: 8px 20px;
+}
 
 /* Sidebar ------------------------------------------------------------------------- */
 
@@ -261,27 +294,87 @@ footer {
     white-space: nowrap; /* Prevents text from wrapping over! */
 }
 
-/* Clipped Portrait --------------------------------------------------------------------- */
-.circle-mask {
+/* Clipped/'Masked' Circle Portrait ---------------------------------------------------- */
+.outline-circle {
     /* Defines a circle */
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    /* To control the size of the circle, set height or width in HTML */
+    /* To control circle size, set height or width in HTML */
 
+    /* Stylization */ 
+    background-color: var(--LinaGreen0);
+    margin-left: 3%;
+    margin-bottom: 3%;
+
+    /* Positioning & Display */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.mask {
     /* Clipping & positioning behavior */
     overflow: hidden;
     justify-content: center;
     align-items: center;
     display: flex;
-
-    /* Stylization */
-    margin-left: 4%;
-    margin-bottom: 4%;
-    background-color: var(--LinaGreen0);
-    outline: 16px solid var(--LinaGreen0);
+    position: relative;
 }
 
-.circle-mask img{
-    height: 100%;
+.mask img{
+    /* To control circle size, set height or width in HTML */
     display: block;
 }
+
+.decorative-circle {
+    /* Defines a circle */
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    /* To control circle size, set height or width in HTML */
+
+    /* Positioning & Display */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+}
+
+/* Grid ---------------------------------------------------- */
+/* A base for columns */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: stretch;
+    gap: 40px;
+    text-align: left;
+}
+
+.flex-container > div ul {
+    list-style: none; /* Removes #s from the ordered list */
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.flex-container > div ul li {
+    color: white;
+    line-height: 130%;
+    margin-top: 12px;
+}
+.flex-container > div ul li .minitext {
+    color: var(--LinaGreen4);
+    font-weight: 600;
+    font-size: .65em;
+    line-height: 130%;
+    margin-top: -11px;
+}
+
+
+
+/* Could be useful for positioning items (from OhiOPT)
+.pageSpecificButtonPositioning {
+  justify-content: space-between;
+  align-items: right;
+}
+*/
